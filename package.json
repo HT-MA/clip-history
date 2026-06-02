@@ -1,24 +1,25 @@
-{
-  "name": "clip-history",
-  "version": "1.0.0",
-  "description": "Clipboard History Desktop Tool",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "build": "electron-builder --win portable"
-  },
-  "dependencies": {
-    "electron-store": "^8.2.0"
-  },
-  "devDependencies": {
-    "electron": "^33.0.0",
-    "electron-builder": "^25.0.0"
-  },
-  "build": {
-    "appId": "com.cliphistory.app",
-    "productName": "ClipHistory",
-    "win": {
-      "target": "portable"
-    }
-  }
+﻿{
+    "name":  "clip-history",
+    "version":  "1.0.0",
+    "description":  "Clipboard History Desktop Tool",
+    "main":  "main.js",
+    "scripts":  {
+                    "start":  "electron .",
+                    "build":  "electron-builder --win portable"
+                },
+    "dependencies":  {
+                         "electron-store":  "^8.2.0"
+                     },
+    "devDependencies":  {
+                            "electron":  "^33.0.0",
+                            "electron-builder":  "^25.0.0"
+                        },
+    "build":  {
+                  "appId":  "com.cliphistory.app",
+                  "productName":  "ClipHistory",
+                  "win":  {
+                              "target":  "portable",
+                              "icon":  "assets/icon-256.png"
+                          }
+              }
 }

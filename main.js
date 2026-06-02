@@ -93,9 +93,7 @@ function saveBounds() {
 }
 
 function createTray() {
-  const icon = nativeImage.createFromDataURL(
-    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAKRJREFUWEft1rENwjAQBdD/FYyAWIAJYAQKOkZgBDoWYARGYARGYARGYAQK4kjWybElf/6XkixZ9tP3t08pMTzGcRwBPOdcJgw457YAnpxzWwDXvu9vLcCrjJkBHJ0XT56mDZ77wNeAvQIdADfPswgE86sTQVMD9wJsJw8BofzGE4haQSe6pwDa2r9JQk5K/aFaQdL0U/JLgHYOLzmj8ynwBu+FJXEhMJUAAAAAAElFTkSuQmCC'
-  );
+  const icon = nativeImage.createFromPath(path.join(__dirname, 'assets', 'icon-16.png'));
   tray = new Tray(icon);
   tray.setToolTip('ClipHistory');
 
